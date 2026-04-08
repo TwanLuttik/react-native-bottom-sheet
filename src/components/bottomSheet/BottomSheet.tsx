@@ -246,7 +246,7 @@ const BottomSheetComponent = forwardRef<BottomSheet, BottomSheetProps>(
       let isContainerHeightCalculated = false;
       //container height was provided.
       if (
-        _providedContainerHeight !== null ||
+        _providedContainerHeight !== null &&
         _providedContainerHeight !== undefined
       ) {
         isContainerHeightCalculated = true;
