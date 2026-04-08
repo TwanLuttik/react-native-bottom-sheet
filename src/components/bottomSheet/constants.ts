@@ -3,6 +3,7 @@ import {
   KEYBOARD_BLUR_BEHAVIOR,
   KEYBOARD_INPUT_MODE,
   SCREEN_HEIGHT,
+  WINDOW_HEIGHT,
 } from '../../constants';
 
 // default values
@@ -31,7 +32,7 @@ const INITIAL_CONTAINER_OFFSET = {
   right: 0,
 };
 const INITIAL_HANDLE_HEIGHT = -999;
-const INITIAL_POSITION = SCREEN_HEIGHT;
+const INITIAL_POSITION = Math.max(SCREEN_HEIGHT, WINDOW_HEIGHT);
 
 // accessibility
 const DEFAULT_ACCESSIBLE = true;
