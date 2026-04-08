@@ -4,11 +4,12 @@ import Animated, {
   useAnimatedProps,
   useDerivedValue,
 } from 'react-native-reanimated';
+import type { AnimatedProps } from 'react-native-reanimated';
 
 interface TextProps {
   text: string;
   value: Animated.SharedValue<number | boolean> | number;
-  style?: Animated.AnimateProps<RNTextProps>['style'];
+  style?: AnimatedProps<RNTextProps>['style'];
 }
 
 const AnimatedTextInput = Animated.createAnimatedComponent(TextInput);

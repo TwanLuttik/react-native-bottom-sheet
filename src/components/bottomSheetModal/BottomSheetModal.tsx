@@ -456,7 +456,7 @@ const BottomSheetModalComponent = forwardRef<
           onAnimate={handleBottomSheetOnAnimate}
           $modal={true}
         >
-          {typeof Content === 'function' ? <Content data={data} /> : Content}
+          {typeof Content === 'function' ? Content({ data }) : Content}
         </BottomSheet>
       </ContainerComponent>
     </Portal>
